@@ -1,0 +1,28 @@
+# Environment
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PHP / Composer
+/vendor/
+/composer.lock
+
+# Logs and generated files
+/logs/
+/qrcodes/
+/assets/images/
+
+# IDE/editor
+/.idea/
+.vscode/
+
+# Node
+node_modules/
+
+# Ignore XAMPP-specific files
+.htaccess
+
+# Ignore database dump (if you have one)
+database.sql

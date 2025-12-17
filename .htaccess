@@ -1,0 +1,12 @@
+# Basic security: prevent directory listing
+Options -Indexes
+
+# Deny access to .env and other sensitive files
+<FilesMatch "^(\.env|config\.php|composer\.json|composer\.lock)$">
+    Require all denied
+</FilesMatch>
+
+# Recommended: route root to index.php (if you later add router)
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^ index.php [L]
